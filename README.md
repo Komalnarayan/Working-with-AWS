@@ -101,6 +101,9 @@ v. in order to run it for publically accessiblily:-
 
 vi. now this will show this on your public ip:-
 
+https://photos.app.goo.gl/nTvX2z4zJVL6w3rb9
+
+
 
 vii. now to build a web page on nginx server:-
 
@@ -115,13 +118,13 @@ viii. now,To enter the html page directly:-
 
 ix. now press ```i``` im order to insert and make your web page, here is an example,
 
+https://photos.app.goo.gl/Smcb5Dw5DSowi2JS6
+
 
 x. now to save it....press 
 # ctrl+c 
-then 
-# shift+; 
-and type 
-# wq
+then **shift** + **;** and type 
+ **wq**
 
 
 xi. now to link the Container to the Local Filesystem
