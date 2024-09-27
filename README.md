@@ -27,34 +27,115 @@ _Now our virtual machine is ready for further operations!!!_
 _so let's get start...._
 
 # 1. Deploying an html page using apache2 web server
-**step-1** log in to your vm by its username (eg.ubuntu) and update it by the following commamd
+# step-1 
+log in to your vm by its username (eg.ubuntu) and update it by the following commamd
 sudo apt update
 
-**step-2** Now to install apache2
+# step-2 
+Now to install apache2
 
 ```sudo apt install apache2```
 
 (You can check if Apache2 is installed properly by entering your server’s IP address in a web browser (e.g., http://your-server-ip). 
 You should see the Apache default page.)
 
-**step-3** In order to change $ into # for root user:-
+# step-3:- 
+In order to change $ into # for root user:-
 
 ```sudo su```
 
-**Step-4** The default web directory for Apache2 is /var/www/html/. Navigate to this directory by:
+# Step-4:-
+The default web directory for Apache2 is /var/www/html/. Navigate to this directory by:
 
 ```cd /var/www/html/```
 
- **step-5** Now you can create your own html page by:-
+ # step-5:- 
+ Now you can create your own html page by:-
 
 ```vi index.html```
 
-**step-6** This will open an editor where you can type your HTML code. Here’s an example of a basic HTML page:-
+# step-6:-
+This will open an editor where you can type your HTML code. Here’s an example of a basic HTML page:-
 
 <html> 
    welcome to my first web page </html>
 
-**step-7** Now inorder to save, press 
+# step-7:-
+Now inorder to save, press
 **ctrl** + **C** then **shift** + **;** and **wq**
 
 # Yupp u have done it!!!
+
+
+
+# 2. Deploying using nginx image from docker
+
+i. Install Docker on EC2Once logged in via PuTTY, update the package repository:
+  
+  ``` sudo apt update```
+
+ii. Install Docker by:-
+
+```sudo apt install apt-transport-https ca-certificates curl software-properties-common```
+
+```curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -```
+
+```sudo add-apt-repository "deb [arch=amd64]```
+```https://download.docker.com/linux/ubuntu focal stable"```
+
+```apt-cache policy docker-ce```
+
+```sudo apt install docker-ce```
+
+iii. Docker has installed now to enable it...
+
+```sudo systemctl enable docker```
+
+iv. now pull nginx to create a docker image by:-
+
+```sudo docker pull nginx```
+
+v. in order to run it for publically accessiblily:-
+
+```docker run --name docker-nginx -p 80:80 nginx```
+
+vi. now this will show this on your public ip:-
+
+
+vii. now to build a web page on nginx server:-
+
+```mkdir -p ~/docker-nginx/html```
+then, 
+
+```cd ~/docker-nginx/html```
+
+viii. now,To enter the html page directly:-
+
+```vi index.html```
+
+ix. now press ```i``` im order to insert and make your web page, here is an example,
+
+
+x. now to save it....press 
+# ctrl+c 
+then 
+# shift+; 
+and type 
+# wq
+
+
+xi. now to link the Container to the Local Filesystem
+
+
+```docker run --name docker-nginx -p 80:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx```
+
+now copy and paste your public ip on web browser!!!
+
+
+
+
+
+
+
+
+
