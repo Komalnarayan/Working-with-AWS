@@ -100,8 +100,7 @@ v. in order to run it for publically accessiblily:-
 ```docker run --name docker-nginx -p 80:80 nginx```
 
 vi. now this will show this on your public ip:-
-
-https://photos.app.goo.gl/nTvX2z4zJVL6w3rb9
+![image alt](https://photos.app.goo.gl/nTvX2z4zJVL6w3rb9)
 
 
 
@@ -117,8 +116,7 @@ viii. now,To enter the html page directly:-
 ```vi index.html```
 
 ix. now press ```i``` im order to insert and make your web page, here is an example,
-
-https://photos.app.goo.gl/Smcb5Dw5DSowi2JS6
+![image alt](https://photos.app.goo.gl/Smcb5Dw5DSowi2JS6)
 
 
 x. now to save it....press 
