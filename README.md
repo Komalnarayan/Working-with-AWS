@@ -100,7 +100,7 @@ v. in order to run it for publically accessiblily:-
 ```docker run --name docker-nginx -p 80:80 nginx```
 
 vi. now this will show this on your public ip:-
-![image alt](https://photos.app.goo.gl/nTvX2z4zJVL6w3rb9)
+![default_page](https://github.com/user-attachments/assets/3b10e3b0-94a2-4ae4-8abf-7f60f0b92079)
 
 
 
