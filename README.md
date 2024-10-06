@@ -57,8 +57,8 @@ The default web directory for Apache2 is /var/www/html/. Navigate to this direct
 # step-6:-
 This will open an editor where you can type your HTML code. Here’s an example of a basic HTML page:-
 
-<html> 
-   welcome to my first web page </html>
+![hqdefault](https://github.com/user-attachments/assets/b62fcbb5-7c3c-4eeb-b2d0-8657951a3c19)
+
 
 # step-7:-
 Now inorder to save, press
@@ -114,15 +114,14 @@ then,
 viii. now,To enter the html page directly:-
 
 ```vi index.html```
+ix. Now make your web page, here is an example,
+![hqdefault](https://github.com/user-attachments/assets/fd3d8858-9837-473a-a7ba-c7646c386ce1)
 
-ix. now press ```i``` im order to insert and make your web page, here is an example,
-![image alt](https://photos.app.goo.gl/Smcb5Dw5DSowi2JS6)
 
 
 x. now to save it....press 
-# ctrl+c 
-then **shift** + **;** and type 
- **wq**
+# ctrl+x 
+then **y** and **enter**
 
 
 xi. now to link the Container to the Local Filesystem
