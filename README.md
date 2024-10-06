@@ -100,6 +100,7 @@ v. in order to run it for publically accessiblily:-
 ```docker run --name docker-nginx -p 80:80 nginx```
 
 vi. now this will show this on your public ip:-
+
 ![default_page](https://github.com/user-attachments/assets/3b10e3b0-94a2-4ae4-8abf-7f60f0b92079)
 
 
@@ -115,6 +116,7 @@ viii. now,To enter the html page directly:-
 
 ```vi index.html```
 ix. Now make your web page, here is an example,
+
 ![hqdefault](https://github.com/user-attachments/assets/fd3d8858-9837-473a-a7ba-c7646c386ce1)
 
 
@@ -155,6 +157,10 @@ In order to install minikube, thete are some prerequisites given below:-
 
 ```$ minikube version```
 
+
+![image](https://github.com/user-attachments/assets/56d5e70f-1a73-466b-a8df-f4d542896565)
+
+
 **STEP-3** Install Kubectl tool:-
 Kubectl is a command line tool, used to interact with your Kubernetes cluster. 
 So, to install kubectl run beneath curl command->
@@ -173,10 +179,18 @@ So, to install kubectl run beneath curl command->
 
 ```$  kubectl version -o yaml```
 
+
+![image](https://github.com/user-attachments/assets/8709c13c-e23a-487b-846f-2939aae5680f)
+
+
 # Start Minikube Cluster
 **STEP-6** Now that Minikube is installed, start a Kubernetes cluster using the following command:
 
 ```$ minikube start--driver=docker```
+
+
+![image](https://github.com/user-attachments/assets/acaebd0c-cc9f-4dbf-bb27-ebece02e1b30)
+
 
 
 This command initializes a single-node Kubernetes cluster, and it might take a few minutes to download the necessary components.
@@ -204,6 +218,11 @@ This command initializes a single-node Kubernetes cluster, and it might take a f
 
 ```$ minikube addons list```
 
+
+![image](https://github.com/user-attachments/assets/f079dc03-6684-4b99-94d6-56dde3c824ff)
+
+
+
 ```$ minikube addons enable dashboard```
 
 ```$ minikube addons enable ingress```
@@ -211,6 +230,13 @@ This command initializes a single-node Kubernetes cluster, and it might take a f
 **STEP-11** To start the Kubernetes dashboard run below command, it will automatically launch the dashboard in the web browser as shown below:-
 
 ```$ minikube dashboard```
+
+
+
+![image](https://github.com/user-attachments/assets/9edecd03-b7fe-4c2b-804a-4e0f9e059596)
+
+
+![image](https://github.com/user-attachments/assets/8b348cfa-12ce-451f-a9fe-3ed933a2aaa8)
 
 
 
