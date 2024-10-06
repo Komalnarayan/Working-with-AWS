@@ -122,7 +122,7 @@ ix. Now make your web page, here is an example,
 
 
 x. now to save it....press 
-# ctrl+x 
+**ctrl+x** 
 then **y** and **enter**
 
 
