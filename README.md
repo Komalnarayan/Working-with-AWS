@@ -115,6 +115,7 @@ then,
 viii. now,To enter the html page directly:-
 
 ```nano index.html```
+
 ix. Now make your web page, here is an example,
 
 ![hqdefault](https://github.com/user-attachments/assets/fd3d8858-9837-473a-a7ba-c7646c386ce1)
