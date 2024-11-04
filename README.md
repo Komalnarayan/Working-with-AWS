@@ -240,6 +240,51 @@ This command initializes a single-node Kubernetes cluster, and it might take a f
 ![image](https://github.com/user-attachments/assets/8b348cfa-12ce-451f-a9fe-3ed933a2aaa8)
 
 
+# To Install openstack on VM and create a VM on it
+
+*STEP 1*. Create an instance  in  AWS  , using operating system *UBUNTU* then make some changes 
+• Take Amozon Machine Image (AMI)
+•Instance type-> t3.xlarge
+•Storage-> 50GB
+
+In Network setting 
+i). SSH
+ii). HTTP
+iii). HTTPS
+iv). ALL TRAFFIC
+
+
+
+*STEP 2.* Launch instance
+
+*STEP 3.* Then copy the IP address and paste it on Putty , now browse the Key as usual then click on OPEN , to create your *Virtual Machine*.
+
+*STEP 4.* Install the openstack snap
+*sudo snap install openstack --channel 2024.1/beta*
+
+*STEP 5.* To Prepare the machine
+
+_Sunbeam can generate a script to ensure that the machine has all of the required dependencies installed and is configured correctly for use in OpenStack - you can review this script using:_
+*sunbeam prepare-node-script*
+
+*sunbeam prepare-node-script | bash -x && newgrp snap_daemon*
+
+_This will directly execute it_
+
+*STEP 6.* Now, deploy the OpenStack cloud using the cluster bootstrap command and accept software defaults:-
+
+*sunbeam cluster bootstrap --accept-defaults*
+
+_It will take around 30 minutes._
+
+*STEP 7.* To configure the deployed cloud:-
+_*sunbeam configure --accept-defaults --openrc demo-openrc*_
+
+ *STEP 8.* To open the VM which ead created on OpenStack
+
+*sunbeam launch ubuntu --name test*
+
+
 
 
 
