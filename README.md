@@ -318,6 +318,7 @@ AWS Console-->Services ---> Networking & Content Delivery -->VPC--> Your VPCs
 
 
 • Creating four subnets 2 for public and 2 for private
+![382708730-20e39867-6cf0-4b63-928d-edb4da49fc32](https://github.com/user-attachments/assets/caf8d619-b55e-4333-b96b-71665bd967c3)
 
 
 
@@ -373,9 +374,11 @@ If you need a web server (e.g., Apache) on each instance to serve web content:
 
 
 2. Select Application Load Balancer.
+   
 
+![382807156-f896d602-a3ac-4c0d-a43f-32b133ea5da6](https://github.com/user-attachments/assets/675f795e-09db-4c5b-b865-399fb9861c99)
 
-3. Configure Load Balancer settings:
+3.. Configure Load Balancer settings:
 
 Choose a name for the load balancer.
 
