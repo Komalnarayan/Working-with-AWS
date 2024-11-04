@@ -302,7 +302,7 @@ _It will take around 30 minutes._
 
 
 
-To check the distribution of  trafficking over two servers:-
+## To check the distribution of  trafficking over two servers:-
 
 **STEP-1** For this first of all we need to create the following--->
 
