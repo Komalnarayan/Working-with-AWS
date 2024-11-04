@@ -137,7 +137,7 @@ now copy and paste your public ip on web browser!!!
 
 # STEPS TO INSTALL MINIKUBE:-
 
-In order to install minikube, thete are some prerequisites given below:-
+In order to install minikube, there are some prerequisites given below:-
 
 • Pre-Install Ubuntu 22.04 system
 
@@ -242,7 +242,7 @@ This command initializes a single-node Kubernetes cluster, and it might take a f
 
 # To Install openstack on VM and create a VM on it
 
-*STEP 1*. Create an instance  in  AWS  , using operating system *UBUNTU* then make some changes 
+**STEP 1**. Create an instance  in  AWS  , using operating system *UBUNTU* then make some changes 
 
 • Take Amozon Machine Image (AMI)
 
@@ -261,16 +261,16 @@ iv). ALL TRAFFIC
 
 
 
-*STEP 2.* Launch instance
+**STEP 2.** Launch instance
 
-*STEP 3.* Then copy the IP address and paste it on *Putty* , now browse the Key as usual then click on OPEN , to create your *Virtual Machine*.
+**STEP 3.** Then copy the IP address and paste it on *Putty* , now browse the Key as usual then click on OPEN , to create your *Virtual Machine*.
 
-*STEP 4.* Install the openstack snap:-
+**STEP 4.**  Install the openstack snap:-
 
 ```sudo snap install openstack --channel 2024.1/beta```
 
 
-*STEP 5.* To Prepare the machine
+**STEP 5.** Prepare the machine
 
 _Sunbeam can generate a script to ensure that the machine has all of the required dependencies installed and is configured correctly for use in OpenStack - you can review this script using:_
 
@@ -281,18 +281,18 @@ _Sunbeam can generate a script to ensure that the machine has all of the require
 
 _This will directly execute it_
 
-*STEP 6.* Now, deploy the OpenStack cloud using the cluster bootstrap command and accept software defaults:-
+**STEP 6**  Now, deploy the OpenStack cloud using the cluster bootstrap command and accept software defaults:-
 
 
 ```sunbeam cluster bootstrap --accept-defaults```
 
 _It will take around 30 minutes._
 
-*STEP 7.* To configure the deployed cloud:-
+**STEP 7.** To configure the deployed cloud:-
 
 ```sunbeam configure --accept-defaults --openrc demo-openrc```
 
- *STEP 8.* To open the VM which ead created on OpenStack
+ **STEP 8.** To open the VM which ead created on OpenStack
 
 ```sunbeam launch ubuntu --name test```
 
