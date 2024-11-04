@@ -314,6 +314,7 @@ To check the distribution of  trafficking over two servers:-
 
 AWS Console-->Services ---> Networking & Content Delivery -->VPC--> Your VPCs
 
+![382708844-10343b81-c870-420f-a2a5-63036d73c386](https://github.com/user-attachments/assets/55b57f62-ca7b-4f7e-b632-fbde8af1ed6b)
 
 
 
@@ -327,6 +328,8 @@ AWS Console-->Services ---> Networking & Content Delivery -->VPC--> Your VPCs
 
 
 
+![Screenshot (11)](https://github.com/user-attachments/assets/0146b50a-4509-4aa8-93f2-a214789b005c)
+
 
 
 
@@ -338,6 +341,7 @@ AWS Console-->Services ---> Networking & Content Delivery -->VPC--> Your VPCs
 
 • Create two route tables and attach to subnets
 
+![Screenshot (10)](https://github.com/user-attachments/assets/2c30a764-971c-4cc3-a60f-7c003f3ce779)
 
 
 Now edit R1-IGW and add routing rule as mentioned below
@@ -346,11 +350,16 @@ One route for Internet gateway, another for Virtual private gateway (R1-IGW and 
 • Route - 0.0.0.0/0 to IGW
 • Route - 192.168.0.0/16 to VGW
 
+![Screenshot (13)](https://github.com/user-attachments/assets/1acf8a87-6acf-401e-a066-b6fb77670eae)
 
 
 
 
 **STEP-2** Launch two instances for load balancing
+
+![382806473-109b2d21-c81e-47ff-8f5e-fa80c0e864fa](https://github.com/user-attachments/assets/cc7635ba-f833-4117-8169-3b5cd4039cb2)
+
+
 
  then,Install Web Server 
 
@@ -362,6 +371,7 @@ If you need a web server (e.g., Apache) on each instance to serve web content:
 2. Install a web server like Apache
 3. Add sample content on each instance, as usual we do....
 
+![Screenshot-5-1](https://github.com/user-attachments/assets/71d9a7f7-61c2-474f-a0d7-91ed4062c1f2)
 
 
 
@@ -401,6 +411,7 @@ Choose a target type (usually Instance for EC2 instances).
 Configure Health Checks
 
 
+![382807634-b45ef372-b95c-4d65-a3b6-d7149497ca18](https://github.com/user-attachments/assets/d55538f5-9675-4e26-94df-0f34f65a5c6d)
 
 
 
@@ -411,6 +422,7 @@ Add the two EC2 instances to the target group.
 
 Save the target group settings.
 
+![382807419-dc6a0846-ef2e-404c-bed6-83edd0643f3b](https://github.com/user-attachments/assets/b6d13bb2-bf86-43cd-84aa-d3d12d56e413)
 
 
 
@@ -426,16 +438,13 @@ Save the target group settings.
 
 3. Review and create the load balancer.
 
-
-
-
-
 **STEP-6** : Test the Application Load Balancer
 
 1. After the load balancer is created, go to Load Balancer > Description to find its DNS name.
 
 
 2. Access the DNS name in your browser:
+![Screenshot-5-1](https://github.com/user-attachments/assets/05e3e321-3623-4610-b1c2-865c9eb454a2)
 
 The load balancer should distribute traffic between the two instances.
 
