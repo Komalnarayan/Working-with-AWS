@@ -450,4 +450,9 @@ The load balancer should distribute traffic between the two instances.
 
 Refresh the browser multiple times to see requests being routed to different instances.
 
+Then on one linux web server you have to enter some commands to check the load balancer.
+
+```sequence999999999999999999999```
+
+```htop```
 
