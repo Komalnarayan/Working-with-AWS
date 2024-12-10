@@ -1,4 +1,4 @@
-# DEPLOYMENT ON AWS 
+# DEPLOYMENT ON AWS
 
 # •To Launch instance to create virtual machine
 
